@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="form">
+    <input type="text" placeholder="请输入用户名" value="{{username}}" bindinput="inputUsername"></input>
+    <input type="password" placeholder="请输入密码" value="{{password}}" bindinput="inputPassword"></input>
+    <button type="primary" bindtap="login">登录</button>
+  </view>
+</view>

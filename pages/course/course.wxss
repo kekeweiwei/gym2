@@ -1,0 +1,81 @@
+/* pages/course/course.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.course-info {
+  display: flex;
+  width: 80%;
+  margin-top: 20rpx;
+}
+
+.course-info image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.course-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+
+.course-name {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.course-price {
+  color: #f00;
+}
+
+.course-rate {
+  display: flex;
+  align-items: center;
+}
+
+.course-score {
+  color: #f00;
+}
+
+.course-desc {
+  width: 80%;
+  margin-top: 20rpx;
+}
+
+.desc-title {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.desc-content {
+  margin-top: 10rpx;
+}
+
+.course-comment {
+  width: 80%;
+  margin-top: 20rpx;
+}
+
+.comment-title {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.comment-item {
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.comment-user {
+  display: flex;
+  align-items: center;
+}
+
+.comment-user image {
+  width: 40rpx;
+  height:40rpx}

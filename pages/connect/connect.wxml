@@ -1,0 +1,8 @@
+<!--pages/connect/connect.wxml-->
+<view class="container">
+  <view class="title">联系我们</view>
+  <view class="content">
+    <button open-type="contact" session-from="contact">联系客服</button>
+    <button bindtap="callPhone">拨打客服电话</button>
+  </view>
+</view>

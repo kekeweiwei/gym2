@@ -1,0 +1,38 @@
+<!--pages/course/course.wxml-->
+<view class="container">
+  <view class="course-info">
+    <image src="/images/2.jpg" mode="aspectFit"></image>
+    <view class="course-detail">
+      <text class="course-name">课程包预约</text>
+      <text class="course-price">￥ 99</text>
+      <view class="course-rate">
+        <text>评分：</text>
+        <text class="course-score">{{course.score}}</text>
+        <text>（{{course.commentNum}}条评论）</text>
+      </view>
+    </view>
+  </view>
+  <view class="course-desc">
+    <text class="desc-title">课程简介</text>
+    <text class="desc-content">  ：略...........              .............
+  ....
+    </text>
+  </view>
+  <view class="course-comment">
+    <text class="comment-title">用户评论</text>
+    <view wx:for="{{course.comments}}" wx:key="id" class="comment-item">
+      <view class="comment-user">
+        <image src="{{item.avatar}}" mode="aspectFit"></image>
+        <text class="user-name">{{item.name}}</text>
+      </view>
+      <view class="comment-content">
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="course-btns">
+    <button class="collect-btn" bindtap="collectCourse" data-id="{{course.id}}">{{course.collected ? '取消收藏' : '收藏课程'}}</button>
+    <button class="share-btn" bindtap="shareCourse" data-id="{{course.id}}">分享课程</button>
+    <button class="buy-btn" bindtap="buyCourse" data-id="{{course.id}}">购买课程</button>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/pay/pay.wxml-->
+<view class="container">
+  <view class="title">待付款</view>
+  <view class="content">
+    <view wx:for="{{orders}}" wx:key="id" class="order-item" data-id="{{item.id}}">
+      <view class="order-info">
+        <text>订单编号：{{item.id}}</text>
+        <text class="order-status">待付款</text>
+      </view>
+      <view class="course-info">
+        <image src="{{item.course.image}}" mode="aspectFit"></image>
+        <view class="course-detail">
+          <text class="course-name">{{item.course.name}}</text>
+          <text class="course-price">￥{{item.course.price}}</text>
+        </view>
+      </view>
+      <view class="pay-info">
+        <text>剩余支付时间：</text>
+        <text class="pay-time">{{item.payTime}}</text>
+      </view>
+      <view class="pay-btns">
+        <button class="pay-btn" bindtap="goPay" data-id="{{item.id}}">立即支付</button>
+        <button class="cancel-btn" bindtap="cancelOrder" data-id="{{item.id}}">取消订单</button>
+      </view>
+    </view>
+  </view>
+</view>

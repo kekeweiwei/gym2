@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 50rpx 0;
+}
+
+.content {
+  width: 80%;
+}
+
+.order-item {
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-status {
+  color: #f00;
+}
+
+.course-info {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.course-info image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.course-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+
+.course-name {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.course-price {
+  color: #f00;
+}
+
+.pay-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+}
+
+.pay-time {
+  color: #f00;
+}
+
+.pay-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.pay-btn {
+  width: 40%;
+  background-color: #1aad19;
+  color: #fff;
+  border: none;
+  border-radius: 10rpx;
+}
+
+.cancel-btn {
+  width: 40%;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 10rpx;
+}

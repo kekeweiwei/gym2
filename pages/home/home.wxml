@@ -1,0 +1,105 @@
+<!--pages/home/home.wxml-->
+<scroll-view class="container_view" scroll-y>
+<swiper class="swiper-container " indicator-dots indicator-color="white" circular="ture">
+  <swiper-item class="item">
+    <view>
+      <image src="/images/swiper1.png" mode="aspectFill"></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <image src="/images/swiper2.png" mode="aspectFill"></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <image src="/images/swiper3.png" mode="aspectFill"></image>
+    </view>
+  </swiper-item>
+</swiper>
+<!--<view class="td">
+<text >课程预约</text>
+</view>
+<view style="flex-direction: column;">
+  <view class="ma">
+    <image src="/images/1.jpg" ></image>
+  </view>
+  <view class="td1"><text>俯卧撑课程：                       余12 </text></view>
+  <view class="ma">
+    <image src="/images/2.jpg" ></image>
+  </view>
+  <view class="td1"><text>全身塑形：                       余20</text></view>
+  <view class="ma">
+    <image src="/images/3.png" ></image>
+  </view>
+  <view class="ma">
+    <image src="/images/4.jpg" ></image>
+  </view>
+  <view class="ma">
+    <image src="/images/5.jpg" ></image>
+  </view>
+</view>
+-->
+<view class="td">
+<text bindtap="course">课程预约</text>
+</view>
+
+
+
+<van-card
+
+  price="23.00"
+  desc="教练： XXX"
+  title="俯卧撑训练"
+  thumb="/images/2.jpg"
+  >
+  <view slot="footer">
+    <van-button  plain type="primary" size="mini"  color="#2b4b6b" bindtap="load"> 预约 </van-button>
+  </view>
+  </van-card>
+  <van-card
+
+  price="66.00"
+  desc="教练：piik"
+  title="全身减脂课"
+  thumb="/images/3.png"
+  >
+  <view slot="footer">
+    <van-button  plain type="primary" size="mini" color="#2b4b6b" bindtap="load"> 预约 </van-button>
+  </view>
+  </van-card>
+  <van-card
+
+  price="288.00"
+  desc="教练： yoyo"
+  title="瑜伽课程"
+  thumb="/images/4.jpg"
+  >
+  <view slot="footer">
+    <van-button  plain type="primary" size="mini" color="#2b4b6b"bindtap="load"> 预约 </van-button>
+  </view>
+  </van-card>
+
+  <van-card
+  price="0.99"
+  desc="教练： niko"
+  title="射击训练"
+  thumb="/images/5.jpg"
+  >
+  <view slot="footer">
+    <van-button  plain type="primary" size="mini" color="#2b4b6b" bindtap="load"> 预约 </van-button>
+  </view>
+  </van-card>
+  <van-card
+
+  price="1.99"
+  desc="教练： aa"
+  title="拳击课程"
+  thumb="/images/2.jpg"
+  >
+  <view slot="footer">
+    <van-button  plain type="primary" size="mini" color="#2b4b6b"bindtap="load"> 预约 </van-button>
+  </view>
+  </van-card>
+
+</scroll-view>
